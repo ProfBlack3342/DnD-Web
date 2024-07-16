@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Noto+Serif";
+
+body
+{
+    border: groove 2px black;
+    background-color: #5f0000;
+}
