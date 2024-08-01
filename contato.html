@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia DnD - Contato</title>
+        <link rel="stylesheet" type="text/css" href="_css/menu.css">
+        <link rel="stylesheet" type="text/css" href="_css/contato.css">
+        <link rel="stylesheet" type="text/css" href="_css/rodape.css">
+    </head>
+    <body>
+        <div id = "topo" class="menu">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>  |  </li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li>  |  </li>
+                        <li><a href="racas.html">Raças</a></li>
+                        <li>  |  </li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li>  |  </li>
+                        <li><a href="contato.html" class="ativo">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="contato">
+            <h1>Contato</h1>
+            <div id="form">
+                <form action="contato.php" method="post">
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome...">
+                    </div>
+
+                    <div>
+                        <label for="sobrenome">Sobrenome: </label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome..">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail: </label>
+                        <input type="email" id="email" name="email" placeholder="@">
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado: </label>
+                        <select id="estado" name="estado">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div id="generos">
+                        <legend>Gênero: </legend>
+                        
+                        <input type="radio" id="masculino" name="genero" value="M">
+                        <label for="masculino">Masculino</label>
+                        
+                        <input type="radio" id="feminino" name="genero" value="F">
+                        <label for="feminino">Feminino</label>
+                        
+                        <input type="radio" id="outro" name="genero" value="O">
+                        <label for="outro">Outro/Nenhum</label>
+                    </div>
+                    
+                    <hr>
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite algo..." style="height:200px"></textarea>
+                
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <div class="rodape">
+            <footer>
+                <p>
+                    Site Criado por Eduardo Pereira Moreira - <a href="https://github.com/ProfBlack3342" target="_blank" rel="noopener noreferrer">Github</a>
+                </p>
+                <p>
+                    <a href="#topo">Voltar ao Topo</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
