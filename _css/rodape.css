@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import "https://fonts.googleapis.com/css?family=Noto+Serif";
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.rodape footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    margin: -10px -8px -10px -10px;
+    background-color: #860000;
+    box-shadow: 8px 8px 8px 8px #040404;
+    border: solid 1px #040404;
+}
+
+.rodape footer p {
+    line-height: 5px;
+    padding-top: 2px;
+    text-align: center;
+    text-indent: 20pt;
+    color: white;
+}
+
+.rodape footer p a {
+    color: white;
+}
+
+div.rodape footer p a:hover {
+    color: yellow;
+}
