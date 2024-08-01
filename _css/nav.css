@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "https://fonts.googleapis.com/css?family=Noto+Serif";
+
+.nav {
+  height: auto;
+  max-height: 77%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 6;
+  left: 6;
+  background-color: #860000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: outset 3px #040404;
+  box-shadow: 1px 1px 6px 1px #040404;
+}
+
+.nav ol {
+  list-style-type: decimal;
+}
+
+.nav ol li::marker {
+  color: white;
+  font-size: 11pt;
+}
+
+.nav a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  padding: 0px 8px 6px 0px;
+  text-decoration: none;
+  display: block;
+}
+  
+div.nav a:hover {
+  color: yellow;
+}
