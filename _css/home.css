@@ -18,18 +18,17 @@ hr {
     border-color: #DF0000;
 }
 
-ul li, ul li a {
+ul a {
     color: #040404;
     font-size: 12pt;
 }
 
-.home {
-    margin-left: 160px;
+#main {
     padding: 0px 10px;
     padding-bottom: 3rem;
 }
 
-.home img {
+#main img {
     border: outset 3px #DF0000;
     display: block;
     margin-bottom: 20px;
@@ -39,7 +38,7 @@ ul li, ul li a {
     max-width: 98%;
 }
 
-.home div {
+#main div {
     background: wheat;
     border: outset 3px #DF0000;
     box-shadow: 1px 1px 6px #040404;
@@ -48,23 +47,23 @@ ul li, ul li a {
     padding: 10px;
 }
 
-.home div h2 {
+#main div h2 {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 5px;
     padding: 0px 0px 0px 20px;
 }
 
-.home div p {
+#main div p {
     font-size: 13pt;
     padding: 10px 10px 10px 10px;
     text-align: justify;
 }
 
-.home div h3 {
+#main div h3 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px 0px 0px 20px;
 }
 
-.home a:hover {
+#main a:hover {
     color: blue;
 }
