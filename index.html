@@ -3,35 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Guia DnD - Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="_css/menu.css">
-        <link rel="stylesheet" type="text/css" href="_css/nav.css">
+        <title>Manual do Bruxo - Home</title>
+        <script src = "_js/sidenav.js"></script>
+        <link rel="stylesheet" type="text/css" href="_css/sidenav.css">
         <link rel="stylesheet" type="text/css" href="_css/home.css">
         <link rel="stylesheet" type="text/css" href="_css/rodape.css">
     </head>
     <body>
-        <div id = "topo" class="menu">
+        <div id = "menu" class="sidenav">
             <header>
-                <a href="index.html" class="ativo">Home</a>
-                <a href="classes.html">Classes</a>
-                <a href="racas.html">Raças</a>
-                <a href="backgrounds.html">Backgrounds</a>
-                <a href="contato.html">Contato</a>
-                <a href="javascript:void(0);" class="icone" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <div id="linksPaginas">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html" class="ativo">Home</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="racas.html">Raças</a>
+                        <a href="backgrounds.html">Backgrounds</a>
+                        <a href="contato.html">Contato</a>
+                </div>
+                <hr>
+                <div id="linksPagina">
+                    <ol>
+                        <li><a href="#que" onclick="closeNav()">O que é Dungeons & Dragons?</a></li>
+                        <li><a href="#como" onclick="closeNav()">Como funciona o jogo?</a></li>
+                        <li><a href="#preparo" onclick="closeNav()">O que eu devo fazer para começar a jogar?</a></li>
+                    </ol>
+                </div>
             </header>
         </div>
+        <span id="botaoMenu" onclick="openNav()"><button type="button">Menu</button></span>
 
-        <div class="nav">
-            <ol>
-                <li><a href="#que">O que é Dungeons & Dragons?</a></li>
-                <li><a href="#como">Como funciona o jogo?</a></li>
-                <li><a href="#preparo">O que eu devo fazer para começar a jogar?</a></li>
-            </ol>
-        </div>
-
-        <div class="home">
+        <div id="main">
             <h1>Introdução ao RPG de Mesa Dungeons & Dragons</h1>
             <img src="_img/header.jpg" alt="">
             <div id="que">
@@ -116,7 +117,7 @@
                     Site Criado por Eduardo Pereira Moreira - <a href="https://github.com/ProfBlack3342" target="_blank" rel="noopener noreferrer">Github</a>
                 </p>
                 <p>
-                    <a href="#topo">Voltar ao Topo</a>
+                    <a href="#main">Voltar ao Topo</a>
                 </p>
             </footer>
         </div>
