@@ -5,48 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manual do Bruxo - Classes</title>
         <script src = "_js/sidenav.js"></script>
-        <link rel="stylesheet" type="text/css" href="_css/sidenav.css">
-        <link rel="stylesheet" type="text/css" href="_css/classes.css">
-        <link rel="stylesheet" type="text/css" href="_css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
     </head>
     <body>
-        <div id = "topo" class="menu">
+        <div id="overlayEscuro"></div>
+        <div id="sidenav">
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>  |  </li>
-                        <li><a href="classes.html" class="ativo">Classes</a></li>
-                        <li>  |  </li>
-                        <li><a href="racas.html">Raças</a></li>
-                        <li>  |  </li>
-                        <li><a href="backgrounds.html">Backgrounds</a></li>
-                        <li>  |  </li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
+                <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html" class="ativo">Home</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="racas.html">Raças</a>
+                        <a href="backgrounds.html">Backgrounds</a>
+                        <a href="contato.html">Contato</a>
+                </div>
+                <hr>
+                <div>
+                    <ol>
+                        <li><a href="#artifice" onclick="closeNav()">Artífice</a></li>
+                        <li><a href="#barbaro" onclick="closeNav()">Bárbaro</a></li>
+                        <li><a href="#bardo" onclick="closeNav()">Bardo</a></li>
+                        <li><a href="#bruxo" onclick="closeNav()">Bruxo</a></li>
+                        <li><a href="#clerigo" onclick="closeNav()">Clérigo</a></li>
+                        <li><a href="#druida" onclick="closeNav()">Druida</a></li>
+                        <li><a href="#feiticeiro" onclick="closeNav()">Feiticeiro</a></li>
+                        <li><a href="#guardiao" onclick="closeNav()">Guardiao</a></li>
+                        <li><a href="#guerreiro" onclick="closeNav()">Guerreiro</a></li>
+                        <li><a href="#ladino" onclick="closeNav()">Ladino</a></li>
+                        <li><a href="#mago" onclick="closeNav()">Mago</a></li>
+                        <li><a href="#monge" onclick="closeNav()">Monge</a></li>
+                        <li><a href="#paladino" onclick="closeNav()">Paladino</a></li>
+                    </ol>
+                </div>
             </header>
         </div>
+        <span id="botaoMenu" onclick="openNav()"><button type="button">Menu</button></span>
 
-        <div class="nav">
-            <ol>
-                <li><a href="#artifice">Artífice</a></li>
-                <li><a href="#barbaro">Bárbaro</a></li>
-                <li><a href="#bardo">Bardo</a></li>
-                <li><a href="#bruxo">Bruxo</a></li>
-                <li><a href="#clerigo">Clérigo</a></li>
-                <li><a href="#druida">Druida</a></li>
-                <li><a href="#feiticeiro">Feiticeiro</a></li>
-                <li><a href="#guardiao">Guardiao</a></li>
-                <li><a href="#guerreiro">Guerreiro</a></li>
-                <li><a href="#ladino">Ladino</a></li>
-                <li><a href="#mago">Mago</a></li>
-                <li><a href="#monge">Monge</a></li>
-                <li><a href="#paladino">Paladino</a></li>
-            </ol>
-        </div>
-
-        <div class="main">
+        <div id="classes" class="main">
             <h1>Classes e Subclasses</h1>
             <div id="artifice">
                 <table>
@@ -256,13 +251,13 @@
             </div>
         </div>
 
-        <div class="rodape">
+        <div id="rodape">
             <footer>
                 <p>
                     Site Criado por Eduardo Pereira Moreira - <a href="https://github.com/ProfBlack3342" target="_blank" rel="noopener noreferrer">Github</a>
                 </p>
                 <p>
-                    <a href="#main">Voltar ao Topo</a>
+                    <a href="#">Voltar ao Topo</a>
                 </p>
             </footer>
         </div>
