@@ -1,13 +1,13 @@
 function openNav() {
-  document.getElementById("menu").style.width = "250px";
-  document.getElementById("menu").style.border = "outset 3px wheat";
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("sidenav").style.border = "outset 3px wheat";
   document.getElementById("overlayEscuro").style.display = "block";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementsByClassName("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
-  document.getElementById("menu").style.width = "0";
-  document.getElementById("menu").style.border = "none";
+  document.getElementById("sidenav").style.width = "0";
+  document.getElementById("sidenav").style.border = "none";
   document.getElementById("overlayEscuro").style.display = "none";
-  document.getElementById("main").style.marginLeft = "0";
+  document.getElementsByClassName("main").style.marginLeft = "0";
 }
