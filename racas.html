@@ -5,80 +5,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manual do Bruxo - Raças</title>
         <script src = "_js/sidenav.js"></script>
-        <link rel="stylesheet" type="text/css" href="_css/sidenav.css">
-        <link rel="stylesheet" type="text/css" href="_css/racas.css">
-        <link rel="stylesheet" type="text/css" href="_css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
     </head>
     <body>
-        <div id = "topo" class="menu">
+        <div id="overlayEscuro"></div>
+        <div id="sidenav">
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>  |  </li>
-                        <li><a href="classes.html">Classes</a></li>
-                        <li>  |  </li>
-                        <li><a href="racas.html" class="ativo">Raças</a></li>
-                        <li>  |  </li>
-                        <li><a href="backgrounds.html">Backgrounds</a></li>
-                        <li>  |  </li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
+                <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html" class="ativo">Home</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="racas.html">Raças</a>
+                        <a href="backgrounds.html">Backgrounds</a>
+                        <a href="contato.html">Contato</a>
+                </div>
+                <hr>
+                <div>
+                    <ol>
+                        <li><a href="#aarakocra" onclick="closeNav()">Aarakocra</a></li>
+                        <li><a href="#aasimar" onclick="closeNav()">Aasimar</a></li>
+                        <li><a href="#anao" onclick="closeNav()">Anão</a></li>
+                        <li><a href="#bugbear" onclick="closeNav()">Bugbear</a></li>
+                        <li><a href="#centauro" onclick="closeNav()">Centauro</a></li>
+                        <li><a href="#dampiro" onclick="closeNav()">Dampiro</a></li>
+                        <li><a href="#draconato" onclick="closeNav()">Draconato</a></li>
+                        <li><a href="#elfo" onclick="closeNav()">Elfo</a></li>
+                        <li><a href="#fada" onclick="closeNav()">Fada</a></li>
+                        <li><a href="#firbolg" onclick="closeNav()">Firbolg</a></li>
+                        <li><a href="#genesi" onclick="closeNav()">Genesi</a></li>
+                        <li><a href="#gith" onclick="closeNav()">Gith</a></li>
+                        <li><a href="#gnomo" onclick="closeNav()">Gnomo</a></li>
+                        <li><a href="#goblin" onclick="closeNav()">Goblin</a></li>
+                        <li><a href="#golias" onclick="closeNav()">Golias</a></li>
+                        <li><a href="#grung" onclick="closeNav()">Grung</a></li>
+                        <li><a href="#halfling" onclick="closeNav()">Halfling</a></li>
+                        <li><a href="#harengon" onclick="closeNav()">Harengon</a></li>
+                        <li><a href="#hexblood" onclick="closeNav()">Hexblood</a></li>
+                        <li><a href="#hibridosimic" onclick="closeNav()">Híbrido Simic</a></li>
+                        <li><a href="#hobgoblin" onclick="closeNav()">Hobgoblin</a></li>
+                        <li><a href="#hollowone" onclick="closeNav()">Hollow One</a></li>
+                        <li><a href="#humano" onclick="closeNav()">Humano</a></li>
+                        <li><a href="#kalashtar" onclick="closeNav()">Kalashtar</a></li>
+                        <li><a href="#kenku" onclick="closeNav()">Kenku</a></li>
+                        <li><a href="#kobold" onclick="closeNav()">Kobold</a></li>
+                        <li><a href="#leonino" onclick="closeNav()">Leonino</a></li>
+                        <li><a href="#lizardfolk" onclick="closeNav()">Lizardfolk</a></li>
+                        <li><a href="#locathah" onclick="closeNav()">Locathah</a></li>
+                        <li><a href="#loxodonte" onclick="closeNav()">Loxodonte</a></li>
+                        <li><a href="#meioelfo" onclick="closeNav()">Meio-Elfo</a></li>
+                        <li><a href="#meioorc" onclick="closeNav()">Meio-Orc</a></li>
+                        <li><a href="#minotauro" onclick="closeNav()">Minotauro</a></li>
+                        <li><a href="#ork" onclick="closeNav()">Ork</a></li>
+                        <li><a href="#renascido" onclick="closeNav()">Renascido</a></li>
+                        <li><a href="#satiro" onclick="closeNav()">Sátiro</a></li>
+                        <li><a href="#shifter" onclick="closeNav()">Shifter</a></li>
+                        <li><a href="#tabaxi" onclick="closeNav()">Tabaxi</a></li>
+                        <li><a href="#tiefling" onclick="closeNav()">Tiefling</a></li>
+                        <li><a href="#tortle" onclick="closeNav()">Tortle</a></li>
+                        <li><a href="#tritao" onclick="closeNav()">Tritão</a></li>
+                        <li><a href="#vedalken" onclick="closeNav()">Vedalken</a></li>
+                        <li><a href="#verdan" onclick="closeNav()">Verdan</a></li>
+                        <li><a href="#warforged" onclick="closeNav()">Warforged</a></li>
+                        <li><a href="#yuanti" onclick="closeNav()">Yuan-Ti</a></li>
+                    </ol>
+                </div>
             </header>
         </div>
+        <span id="botaoMenu" onclick="openNav()"><button type="button">Menu</button></span>
 
-        <div class="nav">
-            <ol>
-                <li><a href="#aarakocra">Aarakocra</a></li>
-                <li><a href="#aasimar">Aasimar</a></li>
-                <li><a href="#anao">Anão</a></li>
-                <li><a href="#bugbear">Bugbear</a></li>
-                <li><a href="#centauro">Centauro</a></li>
-                <li><a href="#dampiro">Dampiro</a></li>
-                <li><a href="#draconato">Draconato</a></li>
-                <li><a href="#elfo">Elfo</a></li>
-                <li><a href="#fada">Fada</a></li>
-                <li><a href="#firbolg">Firbolg</a></li>
-                <li><a href="#genesi">Genesi</a></li>
-                <li><a href="#gith">Gith</a></li>
-                <li><a href="#gnomo">Gnomo</a></li>
-                <li><a href="#goblin">Goblin</a></li>
-                <li><a href="#golias">Golias</a></li>
-                <li><a href="#grung">Grung</a></li>
-                <li><a href="#halfling">Halfling</a></li>
-                <li><a href="#harengon">Harengon</a></li>
-                <li><a href="#hexblood">Hexblood</a></li>
-                <li><a href="#hibridosimic">Híbrido Simic</a></li>
-                <li><a href="#hobgoblin">Hobgoblin</a></li>
-                <li><a href="#hollowone">Hollow One</a></li>
-                <li><a href="#humano">Humano</a></li>
-                <li><a href="#kalashtar">Kalashtar</a></li>
-                <li><a href="#kenku">Kenku</a></li>
-                <li><a href="#kobold">Kobold</a></li>
-                <li><a href="#leonino">Leonino</a></li>
-                <li><a href="#lizardfolk">Lizardfolk</a></li>
-                <li><a href="#locathah">Locathah</a></li>
-                <li><a href="#loxodonte">Loxodonte</a></li>
-                <li><a href="#meioelfo">Meio-Elfo</a></li>
-                <li><a href="#meioorc">Meio-Orc</a></li>
-                <li><a href="#minotauro">Minotauro</a></li>
-                <li><a href="#ork">Ork</a></li>
-                <li><a href="#renascido">Renascido</a></li>
-                <li><a href="#satiro">Sátiro</a></li>
-                <li><a href="#shifter">Shifter</a></li>
-                <li><a href="#tabaxi">Tabaxi</a></li>
-                <li><a href="#tiefling">Tiefling</a></li>
-                <li><a href="#tortle">Tortle</a></li>
-                <li><a href="#tritao">Tritão</a></li>
-                <li><a href="#vedalken">Vedalken</a></li>
-                <li><a href="#verdan">Verdan</a></li>
-                <li><a href="#warforged">Warforged</a></li>
-                <li><a href="#yuanti">Yuan-Ti</a></li>
-            </ol>
-        </div>
-
-        <div class="main">
+        <div id="racas" class="main">
             <h1>Raças e Subraças</h1>
             <div id="aarakocra">
                 <table>
@@ -493,13 +488,13 @@
             </div>
         </div>
 
-        <div class="rodape">
+        <div id="rodape">
             <footer>
                 <p>
                     Site Criado por Eduardo Pereira Moreira - <a href="https://github.com/ProfBlack3342" target="_blank" rel="noopener noreferrer">Github</a>
                 </p>
                 <p>
-                    <a href="#main">Voltar ao Topo</a>
+                    <a href="#">Voltar ao Topo</a>
                 </p>
             </footer>
         </div>
