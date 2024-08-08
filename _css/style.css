@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import "https://fonts.googleapis.com/css?family=Noto+Serif";
+
+body {
+    background: url(../_img/logo.png);
+    background-color: #860000;
+    position: relative;
+    min-height: 100vh;
+}
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #040404;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    border: solid 1px #040404;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Sidenav */
+#overlayEscuro {
+    display: none;
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(134, 0, 0, 1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+#sidenav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 0px 4px 4px 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+#sidenav a:hover {
+    color: yellow;
+}
+#sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#sidenav ul a {
+    list-style-type: decimal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 0px 4px 4px 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+#sidenav ol a {
+    list-style-type: decimal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+#sidenav li::marker {
+    color: white;
+    font-size: 8pt;
+}
+#botaoMenu {
+    position: fixed;
+}
+
+/* Main */
+.main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.main div {
+    background: wheat;
+    border: outset 3px #DF0000;
+    box-shadow: 1px 1px 6px #040404;
+    display: block;
+    margin: 15px 15px 30px 15px;
+    padding: 10px;
+}
+
+/* Home */
+#home img {
+    border: outset 3px #DF0000;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 98%;
+    max-width: 98%;
+}
+#home hr {
+    color: #DF0000;
+    border-color: #DF0000;
+}
+#home h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 5px;
+    padding: 0px 0px 0px 20px;
+}
+#home h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 0px 20px;
+}
+#home p {
+    font-size: 13pt;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+}
+#home a:hover {
+    color: blue;
+}
+
+/* Contato */
+#contato {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0px 10px;
+    padding-bottom: 3rem;
+}
+#contato div {
+    display: inline-block;
+    padding: 10px;
+}
+#formDiv {
+    background: wheat;
+    border: outset 3px #DF0000;
+    box-shadow: 1px 1px 6px #040404;
+    display: block;
+    margin: 15px 15px 30px 15px;
+    padding: 20px;
+}
+input[type=text], input[type=email] select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=radio] {
+    display: inline-block;
+}
+input[type=submit], input[type=reset] {
+    background-color: #860000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #DF0000;
+    color: yellow;
+}
+
+/* Rodapé */
+#rodape footer {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    margin: -10px -8px -10px -10px;
+    background-color: #860000;
+    box-shadow: 8px 8px 8px 8px #040404;
+    border: solid 1px #040404;
+}
+#rodape p {
+    line-height: 5px;
+    padding-top: 2px;
+    text-align: center;
+    text-indent: 20pt;
+    color: white;
+}
+#rodape a {
+    color: white;
+}
+#rodape a:hover {
+    color: yellow;
+}
+
+/* Responsividade */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
