@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
 }
 
-.rodape footer {
+#rodape footer {
     display: block;
     position: absolute;
     bottom: 0;
@@ -19,7 +19,7 @@ body {
     border: solid 1px #040404;
 }
 
-.rodape footer p {
+#rodape p {
     line-height: 5px;
     padding-top: 2px;
     text-align: center;
@@ -27,10 +27,10 @@ body {
     color: white;
 }
 
-.rodape footer p a {
+#rodape a {
     color: white;
 }
 
-div.rodape footer p a:hover {
+#rodape a:hover {
     color: yellow;
 }
