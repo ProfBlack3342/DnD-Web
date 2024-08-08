@@ -5,31 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manual do Bruxo - Contato</title>
         <script src = "_js/sidenav.js"></script>
-        <link rel="stylesheet" type="text/css" href="_css/sidenav.css">
-        <link rel="stylesheet" type="text/css" href="_css/contato.css">
-        <link rel="stylesheet" type="text/css" href="_css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
     </head>
     <body>
-        <div id = "topo" class="menu">
+        <div id="overlayEscuro"></div>
+        <div id="sidenav">
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>  |  </li>
-                        <li><a href="classes.html">Classes</a></li>
-                        <li>  |  </li>
-                        <li><a href="racas.html">Raças</a></li>
-                        <li>  |  </li>
-                        <li><a href="backgrounds.html">Backgrounds</a></li>
-                        <li>  |  </li>
-                        <li><a href="contato.html" class="ativo">Contato</a></li>
-                    </ul>
-                </nav>
+                <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html" class="ativo">Home</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="racas.html">Raças</a>
+                        <a href="backgrounds.html">Backgrounds</a>
+                        <a href="contato.html">Contato</a>
+                </div>
             </header>
         </div>
-        <div class="main">
+        <span id="botaoMenu" onclick="openNav()"><button type="button">Menu</button></span>
+
+        <div id="contato">
             <h1>Contato</h1>
-            <div id="form">
+            <div id="formDiv">
                 <form action="contato.php" method="post">
                     <div>
                         <label for="nome">Nome: </label>
@@ -101,13 +97,14 @@
                 </form>
             </div>
         </div>
-        <div class="rodape">
+
+        <div id="rodape">
             <footer>
                 <p>
                     Site Criado por Eduardo Pereira Moreira - <a href="https://github.com/ProfBlack3342" target="_blank" rel="noopener noreferrer">Github</a>
                 </p>
                 <p>
-                    <a href="#main">Voltar ao Topo</a>
+                    <a href="#">Voltar ao Topo</a>
                 </p>
             </footer>
         </div>
